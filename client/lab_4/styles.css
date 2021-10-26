@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+  
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; 
+  }
+  .top-container {
+    color: black;
+    background-color: darkcyan;  /* Blue */
+    padding: 10px 0;
+    display: flex;
+    justify-content: left; 
+  }
+  
+  .menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links {
+    border: 1px solid #fff;  /* For debugging */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
+  .photo-grid-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 600px;
+    position:relative;
+  }
+  
+  .photo-grid-container .photo-grid-item,
+  .photo-grid-container .photo-grid-item--hidden {
+      display: none;
+  }
+  .photo-grid-container .photo-grid-item img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+  }
+
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+  .signup {
+    margin-left: auto;
+  }
+  .photo-grid-container .photo-grid-item--visible {
+      display: block;
+      animation: fadeVisibility 0.5s;
+  }
+
+  .photo-grid-container .carousel__actions{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .photo-grid-container .carousel__actions button {
+      border-radius: 50px;
+      border: 0;
+      font-weight: bold;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      margin: 0 20px;
+  }
+
+  .photo-grid-container .carousel__actions button#carousel__button--prev {
+    margin-left: 50px;
+  }
+  .photo-grid-container .carousel__actions button#carousel__button--next {
+      margin-right: 50px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
